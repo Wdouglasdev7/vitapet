@@ -13,3 +13,7 @@ memory/
 # Assets originais / arte de redes sociais (versionar só o que está em public/)
 fotos dr/
 POSTS INTAGRMA/
+
+# Notas pessoais (manter local, fora do repo)
+copywhiter.md
+humanizerskill.md
