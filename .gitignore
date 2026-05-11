@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.log
+.env
+.env.local
+.vite
+
+# Claude Code local config + memória interna
+.claude/
+memory/
+
+# Assets originais / arte de redes sociais (versionar só o que está em public/)
+fotos dr/
+POSTS INTAGRMA/

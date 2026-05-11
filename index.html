@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Método Vitapet – Dr. Washington | Salve a vida do seu pet</title>
+  <meta name="description" content="O Método Vitapet do Dr. Washington ajuda tutores a reverter o sedentarismo e a obesidade em cães e gatos, prevenindo doenças cardíacas e gordura no fígado." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- SVG SPRITE -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-paw" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M5.5 12a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm13 0a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5ZM9 7a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm6 0a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm-3 6c-3 0-6 2-6 5a3 3 0 0 0 3 3c1 0 2-.5 3-.5s2 .5 3 .5a3 3 0 0 0 3-3c0-3-3-5-6-5Z"/>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5 10 18 20 7"/>
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3Z"/>
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4"/>
+      </symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/>
+      </symbol>
+      <symbol id="i-liver" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 10c0-3 3-6 7-6s5 2 7 2 2 2 2 4-3 11-9 11-7-7-7-11Z"/>
+        <circle cx="12" cy="12" r="2" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M21 13.5A9 9 0 1 1 10.5 3a7 7 0 0 0 10.5 10.5Z"/>
+      </symbol>
+      <symbol id="i-stethoscope" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3v6a4 4 0 0 0 8 0V3M9 13v3a5 5 0 0 0 5 5 5 5 0 0 0 5-5v-2"/>
+        <circle cx="19" cy="11" r="2" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="i-dog" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7c0-2 2-3 3-2l2 2h6l2-2c1-1 3 0 3 2v4c0 5-4 9-8 9s-8-4-8-9V7Z"/>
+        <circle cx="9" cy="12" r="1" fill="currentColor"/>
+        <circle cx="15" cy="12" r="1" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="11" y1="18" x2="13" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-graduation" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 9 12 4l10 5-10 5L2 9Z"/>
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path fill="currentColor" d="m12 3 2.9 6 6.6.9-4.8 4.6 1.2 6.6L12 18l-5.9 3.1 1.2-6.6L2.5 9.9 9.1 9 12 3Z"/>
+      </symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3 2 20h20L12 3Z"/>
+        <line x1="12" y1="10" x2="12" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="12" cy="17" r="1" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M20.5 3.5A10.4 10.4 0 0 0 3.6 16.7L2 22l5.5-1.5A10.4 10.4 0 1 0 20.5 3.5Zm-8.4 16.1a8.4 8.4 0 0 1-4.3-1.2l-.3-.2-3.2.9.9-3.1-.2-.3a8.4 8.4 0 1 1 7.1 3.9Zm4.7-6.3c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.1-.5 0a6.7 6.7 0 0 1-3.4-3c-.3-.5.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-1 2.3c0 1.3 1 2.7 1.1 2.8s2 3 4.8 4.2c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="#top" class="logo">
+        <svg class="logo__icon"><use href="#i-paw"/></svg>
+        <span class="logo__text">Vita<strong>pet</strong></span>
+      </a>
+      <nav class="topbar__nav">
+        <a href="#problema">O problema</a>
+        <a href="#solucao">O método</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#depoimentos">Resultados</a>
+      </nav>
+      <a href="#oferta" class="btn btn--small btn--primary">Libertar meu pet</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <span class="badge">
+          <svg class="badge__icon"><use href="#i-alert"/></svg>
+          A verdade que a indústria da ração esconde
+        </span>
+        <h1 class="hero__title">
+          A ração industrial está <span class="highlight">roubando a vitalidade</span> do seu pet — todos os dias.
+        </h1>
+        <p class="hero__sub">
+          Por trás de cada saco colorido existe uma indústria bilionária que lucra com a obesidade, o sedentarismo e a morte precoce de cães e gatos. O <strong>Dr. Washington</strong> revela receitas naturais, adaptadas à raça e ao porte do seu animal, <strong>28% mais baratas que a ração industrializada</strong> — e que devolvem saúde, energia e anos de vida ao seu melhor amigo.
+        </p>
+        <div class="hero__ctas">
+          <a href="#oferta" class="btn btn--primary btn--large">
+            Começar agora por R$ 47,90/mês
+          </a>
+          <a href="#solucao" class="btn btn--ghost btn--large">Ver como funciona</a>
+        </div>
+        <ul class="hero__bullets">
+          <li><svg class="ic"><use href="#i-check"/></svg> Receitas naturais <strong>28% mais baratas</strong> que a ração comum</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Ingredientes que você já tem em casa — sem conservantes</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Plano sob medida por espécie, raça e tamanho</li>
+        </ul>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__card">
+          <div class="hero__photo">
+            <img src="/img/dr-washington.png" alt="Dr. Washington, médico veterinário" />
+          </div>
+          <div class="hero__caption">
+            <strong>Dr. Washington</strong>
+            <span>Médico Veterinário · Especialista em saúde de pets domésticos</span>
+          </div>
+        </div>
+        <div class="hero__floating hero__floating--1">
+          <svg class="ic ic--coral"><use href="#i-heart"/></svg>
+          +12.000 pets atendidos
+        </div>
+        <div class="hero__floating hero__floating--2">
+          <svg class="ic ic--gold"><use href="#i-star"/></svg>
+          4.9/5 de satisfação
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust__label">Citado e recomendado por</p>
+      <div class="trust__logos">
+        <span>CRMV</span>
+        <span>Canal Pet</span>
+        <span>Revista Cão &amp; Cia</span>
+        <span>Podcast Patas Saudáveis</span>
+        <span>Clínicas parceiras</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section id="problema" class="section section--problem">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">O inimigo dentro do pote de ração</span>
+        <h2>A ração industrial é o <span class="highlight">veneno silencioso</span> que adoece milhões de pets todo ano.</h2>
+        <p class="section__lead">
+          Conservantes, corantes, subprodutos animais e excesso de carboidratos refinados: é isso que está dentro do saco que você compra todo mês. E o resultado aparece — devagar, mas aparece — no corpo do seu pet:
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="card__icon"><svg><use href="#i-heart"/></svg></div>
+          <h3>Coração sobrecarregado</h3>
+          <p>Os altos teores de sódio e gordura processada da ração comum forçam o coração do seu pet a trabalhar até 40% mais. Quando os sintomas aparecem, o dano já é, em muitos casos, irreversível.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><svg><use href="#i-liver"/></svg></div>
+          <h3>Fígado intoxicado</h3>
+          <p>O excesso de carboidratos refinados e conservantes presentes na ração industrial sobrecarrega o fígado, causando esteatose hepática — uma das principais causas silenciosas de morte em cães e gatos.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><svg><use href="#i-moon"/></svg></div>
+          <h3>Vitalidade roubada</h3>
+          <p>Pet apático, dormindo o dia todo, recusando passeios? A alimentação ultraprocessada provoca picos de glicose e inflamação crônica que apagam a alegria natural do seu animal.</p>
+        </article>
+      </div>
+
+      <div class="alert reveal">
+        <strong>O que a indústria não te conta:</strong> a maior parte dos tutores só descobre o problema na consulta de emergência. E aí o tratamento custa <strong>R$ 3.000 a R$ 15.000</strong> — sem garantia de cura. Enquanto isso, o saco de ração continua na sua despensa.
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER EMOCIONAL -->
+  <section class="banner">
+    <div class="banner__bg">
+      <img src="/img/cachorro-saudavel.png" alt="Cachorro saudável e tranquilo em um campo de flores ao pôr do sol" />
+    </div>
+    <div class="container banner__content reveal">
+      <span class="eyebrow eyebrow--light">Existe outro caminho</span>
+      <h2>Saudável. Ativo. <span class="highlight">Feliz por muitos anos.</span></h2>
+      <p>É exatamente o que o seu pet recupera quando troca a ração ultraprocessada por uma alimentação natural — feita pra ele, pelo Dr. Washington.</p>
+    </div>
+  </section>
+
+  <!-- AUTORIDADE -->
+  <section class="section section--authority">
+    <div class="container grid grid--2 grid--align">
+      <div class="authority__photo reveal">
+        <div class="authority__frame">
+          <img src="/img/dr-washington-authority.png" alt="Dr. Washington — Médico Veterinário" />
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Quem está por trás do método</span>
+        <h2>Dr. Washington — o veterinário que decidiu <span class="highlight">enfrentar a indústria pet</span>.</h2>
+        <p>
+          Médico Veterinário formado e especialista em <strong>nutrição natural de animais domésticos</strong>, Dr. Washington atende cães e gatos há mais de uma década. Depois de ver centenas de famílias perderem seus pets para doenças <em>causadas pela própria ração</em> que eles confiavam, ele decidiu criar um método que devolve ao tutor o controle do que vai no prato do animal — com receitas naturais, baratas e cientificamente balanceadas.
+        </p>
+        <ul class="checklist">
+          <li><svg class="ic ic--green"><use href="#i-graduation"/></svg> CRMV ativo · Medicina Veterinária</li>
+          <li><svg class="ic ic--green"><use href="#i-dog"/></svg> Especialista em nutrição natural de cães e gatos</li>
+          <li><svg class="ic ic--green"><use href="#i-phone"/></svg> Mais de 200 mil tutores acompanham seu trabalho</li>
+          <li><svg class="ic ic--green"><use href="#i-heart"/></svg> Já libertou +12.000 pets da ração industrial</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section id="solucao" class="section section--solution">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">A libertação</span>
+        <h2>Apresentando o <span class="highlight">Método Vitapet</span></h2>
+        <p class="section__lead">
+          Um aplicativo completo, no seu celular, com receitas naturais, baratas e personalizadas — tudo o que o Dr. Washington usa para reverter os danos da alimentação industrial e devolver vitalidade ao seu pet.
+        </p>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="feature reveal">
+          <div class="feature__num">01</div>
+          <h3>Receitas naturais</h3>
+          <p>Cardápios balanceados com ingredientes que você já tem em casa — e que custam <strong>28% menos</strong> que a ração industrializada.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__num">02</div>
+          <h3>Plano de atividades</h3>
+          <p>Exercícios graduais para reverter o sedentarismo causado pela alimentação ultraprocessada — mesmo em apartamento pequeno.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__num">03</div>
+          <h3>Por espécie, raça e porte</h3>
+          <p>Cada animal é único. O que alimenta um Yorkshire não alimenta um Labrador. Aqui, cada plano é <strong>exclusivo</strong> para o seu pet.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature__num">04</div>
+          <h3>Acompanhamento contínuo</h3>
+          <p>Atualizações semanais do Dr. Washington — você nunca volta a depender de um saco de ração na prateleira.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="section section--how">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Em 3 passos, seu pet começa a viver melhor.</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__num">1</div>
+          <h3>Faça sua assinatura</h3>
+          <p>Pagamento seguro pelo cartão ou Pix. Acesso liberado em até 5 minutos.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">2</div>
+          <h3>Cadastre seu pet no app</h3>
+          <p>Espécie, raça, tamanho, idade e peso — o app monta o plano sob medida.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">3</div>
+          <h3>Aplique e veja a transformação</h3>
+          <p>Receitas, atividades e dicas semanais. Resultados visíveis nas primeiras semanas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE RECEBO -->
+  <section id="o-que-recebo" class="section section--receive">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">O que recebo? E como recebo?</span>
+        <h2>Não. Você <span class="highlight">não vai receber</span> apenas um PDF simples e padronizado.</h2>
+      </div>
+
+      <div class="receive">
+        <div class="receive__copy reveal">
+          <p>
+            Após a confirmação do pagamento, você recebe direto no seu e-mail o acesso ao nosso <strong>aplicativo exclusivo</strong>. Lá, você cadastra o seu animalzinho informando <strong>raça, peso e idade</strong> — e, a partir desses dados, nós montamos uma <strong>dieta e um plano de treinos totalmente personalizados</strong> para ele.
+          </p>
+          <p>
+            Cada animal é único. Aqui, tratamos cada caso com o profissionalismo que ele merece, sempre buscando a melhor recuperação possível. E mais: dentro do app, <strong>acompanhamos de perto a evolução e a adaptação alimentar</strong> do seu pet, semana após semana.
+          </p>
+        </div>
+
+        <div class="receive__cards reveal">
+          <div class="receive__card">
+            <div class="receive__card-num">01</div>
+            <div class="receive__card-text">
+              <strong>Acesso por e-mail</strong>
+              <span>Em poucos minutos após o pagamento, o link do app chega direto na sua caixa de entrada.</span>
+            </div>
+          </div>
+          <div class="receive__card">
+            <div class="receive__card-num">02</div>
+            <div class="receive__card-text">
+              <strong>Cadastro do seu pet</strong>
+              <span>Espécie, raça, peso e idade — tudo o que precisamos para personalizar o plano.</span>
+            </div>
+          </div>
+          <div class="receive__card">
+            <div class="receive__card-num">03</div>
+            <div class="receive__card-text">
+              <strong>Plano 100% sob medida</strong>
+              <span>Dieta e treinos exclusivos para o seu pet, ajustados semana a semana conforme a evolução.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="section section--testimonials">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Resultados reais</span>
+        <h2>Tutores que devolveram saúde e energia para seus pets.</h2>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="testimonial reveal">
+          <p>"A Mel emagreceu 3kg em 2 meses só seguindo as receitas do app. Voltou a brincar como filhote!"</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">A</div>
+            <div>
+              <strong>Ana, tutora da Mel</strong>
+              <span>Poodle · 7 anos</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal">
+          <p>"Meu vet disse que o Thor ia precisar de remédio pro coração. Hoje, depois do método, exames 100% normais."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">R</div>
+            <div>
+              <strong>Ricardo, tutor do Thor</strong>
+              <span>Labrador · 9 anos</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal">
+          <p>"Achei que minha gata era só preguiçosa. Era sobrepeso. Agora ela corre atrás do laser de novo. Chorei."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">J</div>
+            <div>
+              <strong>Juliana, tutora da Lua</strong>
+              <span>SRD · 5 anos</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="oferta" class="section section--offer">
+    <div class="container">
+      <div class="offer reveal">
+        <span class="eyebrow eyebrow--light">Oferta especial de lançamento</span>
+        <h2>Liberte seu pet da ração industrial — e ainda economize</h2>
+        <p class="offer__lead">
+          Por menos de R$ 1,60 por dia, você recebe receitas que custam <strong>28% menos que a ração comum</strong> e devolvem saúde, vigor e anos de vida ao seu melhor amigo.
+        </p>
+
+        <div class="pricing">
+          <div class="pricing__price">
+            <span class="pricing__from">de <s>R$ 97,00</s> por apenas</span>
+            <div class="pricing__main">
+              <span class="pricing__currency">R$</span>
+              <span class="pricing__value">47</span>
+              <span class="pricing__cents">,90</span>
+            </div>
+            <span class="pricing__period">/mês · cancele quando quiser</span>
+          </div>
+
+          <ul class="pricing__list">
+            <li><svg class="ic ic--green"><use href="#i-check"/></svg> Receitas naturais <strong>28% mais baratas</strong> que a ração comum</li>
+            <li><svg class="ic ic--green"><use href="#i-check"/></svg> Acesso total ao app (área de membros)</li>
+            <li><svg class="ic ic--green"><use href="#i-check"/></svg> Plano por espécie, raça e porte do seu pet</li>
+            <li><svg class="ic ic--green"><use href="#i-check"/></svg> Atividades físicas para reverter o sedentarismo</li>
+            <li><svg class="ic ic--green"><use href="#i-check"/></svg> Suporte direto do time do Dr. Washington</li>
+          </ul>
+
+          <a href="#" class="btn btn--primary btn--xl" id="ctaCheckout">
+            Quero libertar meu pet da ração industrial
+          </a>
+
+          <div class="guarantee">
+            <svg class="guarantee__icon"><use href="#i-shield"/></svg>
+            <div>
+              <strong>Garantia de 7 dias.</strong>
+              <span>Se em uma semana você não sentir confiança no método, devolvemos 100% do seu dinheiro. Sem perguntas.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--faq">
+    <div class="container container--narrow">
+      <div class="section__head reveal">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Tudo que tutores costumam perguntar antes de começar.</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item reveal">
+          <summary>Funciona para qualquer raça e tamanho?</summary>
+          <p>Sim. O conteúdo é segmentado por espécie (cães e gatos), raça e tamanho. Você recebe exatamente o que faz sentido para o seu animal.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Meu pet já é idoso. Ainda dá tempo?</summary>
+          <p>Dá. Quanto antes começar, melhor — mas pets idosos respondem muito bem ao método, com adaptações específicas que o Dr. Washington explica no app.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Posso cancelar quando quiser?</summary>
+          <p>Sim. A assinatura é mensal e você cancela em 1 clique, sem multa, sem ligação.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Substitui a consulta com meu veterinário?</summary>
+          <p>Não substitui. O método é um complemento educacional. Em caso de doenças, sempre procure um veterinário de confiança.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Em quanto tempo vejo resultados?</summary>
+          <p>A maioria dos tutores percebe mais energia e disposição do pet em 2 a 4 semanas. Mudança de peso visível costuma aparecer entre 30 e 60 dias.</p>
+        </details>
+        <details class="faq__item reveal">
+          <summary>É verdade que essas receitas são mais baratas que a ração?</summary>
+          <p>Sim. Considerando o consumo médio mensal e os ingredientes naturais utilizados, o gasto total fica em média <strong>28% menor</strong> do que com rações premium do mercado — e ainda traz benefícios reais à saúde do seu pet, sem conservantes ou ultraprocessados.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FECHAMENTO -->
+  <section class="section section--final">
+    <div class="container final reveal">
+      <h2>Cada refeição industrial é um pedaço da vida do seu pet que não volta.</h2>
+      <p>Enquanto a indústria lucra, o seu melhor amigo perde vitalidade — em silêncio. Comece hoje, por R$ 47,90, a alimentá-lo com o que ele realmente precisa para viver feliz, saudável e por muitos anos ao seu lado.</p>
+      <a href="#oferta" class="btn btn--primary btn--xl">Quero libertar meu pet agora</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <span class="logo logo--light">
+          <svg class="logo__icon"><use href="#i-paw"/></svg>
+          <span class="logo__text">Vita<strong>pet</strong></span>
+        </span>
+        <p class="footer__tag">Método Vitapet · Dr. Washington — Medicina Veterinária</p>
+      </div>
+      <div class="footer__links">
+        <a href="#">Termos de uso</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Contato</a>
+      </div>
+      <p class="footer__copy">© 2026 Vitapet. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="#" class="wa-float" id="waFloat" aria-label="Falar no WhatsApp">
+    <svg class="wa-float__icon"><use href="#i-whatsapp"/></svg>
+    <span class="wa-float__text">Tirar dúvida</span>
+  </a>
+
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
