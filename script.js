@@ -25,15 +25,14 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   });
 });
 
-// Placeholder checkout handler
-const ctaCheckout = document.getElementById('ctaCheckout');
-if (ctaCheckout) {
-  ctaCheckout.addEventListener('click', (e) => {
-    e.preventDefault();
-    // TODO: integrar com checkout (API)
-    alert('Em breve: integração com checkout. Aqui o tutor seria levado para a página de pagamento.');
+// Checkout — dispara evento Meta Pixel e segue para Cakto
+document.querySelectorAll('a[href*="cakto.com.br"]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'InitiateCheckout');
+    }
   });
-}
+});
 
 // Placeholder WhatsApp
 const wa = document.getElementById('waFloat');
