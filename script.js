@@ -25,7 +25,16 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   });
 });
 
-// Checkout — dispara evento Meta Pixel e segue para Cakto
+// AddToCart — dispara quando o usuário clica em qualquer CTA da oferta
+document.querySelectorAll('a[href^="#oferta"], a[href*="cakto.com.br"]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'AddToCart');
+    }
+  });
+});
+
+// InitiateCheckout — dispara só ao clicar nos botões que vão pra Cakto
 document.querySelectorAll('a[href*="cakto.com.br"]').forEach((btn) => {
   btn.addEventListener('click', () => {
     if (typeof fbq !== 'undefined') {
