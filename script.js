@@ -43,12 +43,3 @@ document.querySelectorAll('a[href*="cakto.com.br"]').forEach((btn) => {
   });
 });
 
-// Placeholder WhatsApp
-const wa = document.getElementById('waFloat');
-if (wa) {
-  wa.addEventListener('click', (e) => {
-    e.preventDefault();
-    // TODO: trocar pelo número real do Dr. Washington
-    window.open('https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20M%C3%A9todo%20Vitapet', '_blank');
-  });
-}
