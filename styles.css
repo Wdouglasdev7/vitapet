@@ -220,10 +220,92 @@ h3 { font-size: 1.2rem; margin-bottom: 8px; }
 .hero__floating--1 { top: 30px; left: -30px; }
 .hero__floating--2 { bottom: 40px; right: -10px; }
 
+/* STORY CARD - História do Thor */
+.story-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 22px;
+  box-shadow: var(--shadow-lg);
+  transform: rotate(-1deg);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.story-card__header {
+  text-align: center;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed var(--ink-100, #e6e6e6);
+}
+.story-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--coral-50, #fff1ed);
+  color: var(--coral-700, #c53d1a);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+.story-card__sub {
+  font-size: 0.88rem;
+  color: var(--ink-500);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.story-stage {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.story-stage__label {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+.story-stage__label--before {
+  background: #fde2e2;
+  color: #b91c1c;
+}
+.story-stage__label--during {
+  background: #fef3c7;
+  color: #b45309;
+}
+.story-stage__label--win {
+  background: var(--green-100, #d1fae5);
+  color: var(--green-800, #065f46);
+}
+.story-stage__photo {
+  aspect-ratio: 16/10;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #000;
+}
+.story-stage__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.story-stage__caption {
+  font-size: 0.9rem;
+  color: var(--ink-700, #374151);
+  margin: 0;
+  line-height: 1.45;
+}
+
 @media (max-width: 880px) {
   .hero__inner { grid-template-columns: 1fr; gap: 50px; }
   .hero__floating--1 { left: 10px; }
   .hero__floating--2 { right: 10px; }
+  .story-card { transform: none; padding: 18px; }
 }
 
 /* ===== TRUST ===== */
